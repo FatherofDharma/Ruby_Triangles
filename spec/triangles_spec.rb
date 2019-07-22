@@ -9,7 +9,9 @@ describe ('#Triangles') do
     expect(triangle1.side2).to(eq(2))
     expect(triangle1.side3).to(eq(3))
   end
+end
 
+describe ('type_check') do
   it ('will evaluate if a triangle is equilateral') do
     triangle1 = Triangles.new(2,2,2)
     expect(triangle1.type_check).to(eq('equilateral'))
